@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow fixed w-full top-0 z-10">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-600">Syed Abdul Mateen</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-500">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center" id="home">
+    <div>
+      <img src="https://cdn.pixabay.com/photo/2021/03/11/17/46/spider-man-6087809_640.jpg" alt="profile" class="rounded-full w-40 h-40 mx-auto shadow-lg border-4 border-grey object-cover">
+      <h2 class="mt-6 text-4xl font-bold">Hi, I'm Syed Abdul Mateen 👋</h2>
+      <p class="mt-2 text-lg">Aspiring Developer | Tech Enthusiast | Lifelong Learner</p>
+      <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-2 rounded-full shadow hover:bg-gray-100">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center mb-10">About Me</h2>
+    <p class="text-lg text-center max-w-3xl mx-auto">
+      I'm a passionate developer with a strong interest in web development, AI, and open-source projects. I love solving problems and building applications that make a difference. 
+      Currently exploring backend frameworks like <span class="font-semibold">FastAPI</span> and working with OCR tools. 🚀
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-100 py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="Python" class="w-16 mx-auto">
+          <h3 class="mt-4 font-semibold">Python</h3>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" class="w-16 mx-auto">
+          <h3 class="mt-4 font-semibold">HTML</h3>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" class="w-16 mx-auto">
+          <h3 class="mt-4 font-semibold">CSS</h3>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="w-16 mx-auto">
+          <h3 class="mt-4 font-semibold">JavaScript</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white shadow rounded-xl overflow-hidden hover:shadow-lg transition">
+        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="project1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Invoice OCR</h3>
+          <p class="text-gray-600">Extracting structured data from invoices using Python & OCR tools like pdfplumber and EasyOCR.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow rounded-xl overflow-hidden hover:shadow-lg transition">
+        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="project2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">FastAPI API</h3>
+          <p class="text-gray-600">Developed a RESTful API with FastAPI to serve OCR data and integrate with external applications.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow rounded-xl overflow-hidden hover:shadow-lg transition">
+        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="project3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">AI Chatbot</h3>
+          <p class="text-gray-600">Built a chatbot prototype with NLP libraries to understand queries and fetch real-time responses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gradient-to-r from-indigo-600 to-blue-500 py-20 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+      <p class="mb-6">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:Syed@example.com" class="hover:text-gray-200">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="w-8">
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="hover:text-gray-200">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-8">
+        </a>
+        <a href="https://github.com" target="_blank" class="hover:text-gray-200">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="w-8">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6 text-center">
+    <p>© 2025 Syed Abdul Mateen | Built with ❤️ using TailwindCSS</p>
+  </footer>
+
+</body>
+</html>
